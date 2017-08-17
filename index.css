@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /** reset css **/
 * {
   margin: 0;
@@ -21,3 +23,7 @@ a {
   color: inherit;
 }
 
+/** common CSS **/
+html {
+  height: 100%;
+}
