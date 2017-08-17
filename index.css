@@ -25,12 +25,144 @@ a {
 
 /** common CSS **/
 body {
-  height: 100%;
-  min-width: 30px;
-  font-size: 62.5%;
+  font-family: Helvetica,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-size: 1.5rem;
 }
 .container {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #ddd;
+  text-align: center;
+  //font-size: 3em;
+}
+#calc {
+  width: 300px;
+  max-width: 600px;
+  height: 100%;
+  margin: 20px auto;
+  background: #999;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+}
+/** header **/
+.header {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#tools {
+  width: 100%;
+  min-height: 35px;
+  background: #e0e0e0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: left;
+}
+#tools span {
+  width: 1.2rem;
+  height: 1.2rem;
+  line-height: 1.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+#tools span:first-child{
+  background: #fc5652;
+}
+#tools span:nth-child(2){
+  background: #fec242;
+}
+#tools span:nth-child(3){
+  background: #35c94a;
+}
+#showCase {
+  width: 100%;
+  min-height: 90px;
+  background: #999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  text-align: right;
+  overflow: auto;
+}
+#showCase> #express {
+  width: 100%;
+  font-size: 2rem;
+  padding: 0 5px;
+}
+#showCase> #result {
+  width: 100%;
+  font-size: 4.5rem;
+  font-weight: 200;
+  padding: 0 5px;
+}
+/** main **/
+.main {
+  width: 100%;
+  height: 70%;
+}
+.main .row {
+  height: 68px;
+  width: 100%;
+  display: flex;
+  margin-bottom: -1px;
+}
+.row:first-child {
+  background: #d6d6d6;
+}
+.row span {
+  height: 100%;
+  width: 25%;
+  background: #e0e0e0;
+  border:1px solid #999;
+  border-right: none;
+  color: #000;
+  font-size: 2rem;
+  line-height: 5rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row span:first-child {
+  border-left: none;
+}
+.row span:last-child {
+  border-bottom: none;
+}
+.row span:active {
+  background: #f0efe9;
+  color: rgba(0,0,0,.5);
+}
+.row span.tool {
+  background-color: #f5923e;
+  color: #fff;
+}
+.row span.tool:active {
+  background: #ff7a09;
+  color: #fff;
+}
+.row span.cheng, .row span.chu, .row span.add, .row span.eq {
+  font-size: 2.5rem;
+}
+.row span.jian {
+  font-size: 1.9rem;
+}
+.row span.zero {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
 }

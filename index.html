@@ -3,56 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>计算器</title>
-
+  <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <div id="tools">
-      <span id="close" title="关闭"></span>
-      <span id="max" title="最大化"></span>
-      <span id="min" title="最小化"></span>
+  <div id="calc">
+    <div class="header">
+      <div id="tools">
+        <span id="close" title="关闭">&nbsp;</span>
+        <span id="max" title="最大化">&nbsp;</span>
+        <span id="min" title="最小化">&nbsp;</span>
+      </div>
+      <div id="showCase">
+        <div id="express">0</div>
+        <div id="result">0</div>
+      </div>
     </div>
-    <div id="showCase">
-      <div id="express"></div>
-      <div id="result">0</div>
-    </div>
-  </div>
-  <div class="main">
-    <div class="row">
-      <span id="reset" data-number="C">AC</span>
-      <span id="remove" data-number="←">←</span>
-      <span data-number="%">%</span>
-      <span data-number="/" class="tool chu">÷</span>
-    </div>
-    <div class="row">
-      <span data-number="7">7</span>
-      <span data-number="8">8</span>
-      <span data-number="9">9</span>
-      <span data-number="*" class="tool cheng">×</span>
-    </div>
-    <div class="row">
-      <span data-number="4">4</span>
-      <span data-number="5">5</span>
-      <span data-number="6">6</span>
-      <span data-number="-" class="tool jian">ㅡ</span>
-    </div>
-    <div class="row">
-      <span data-number="1">1</span>
-      <span data-number="2">2</span>
-      <span data-number="3">3</span>
-      <span data-number="+" class="tool add">＋</span>
-    </div>
-    <div class="row">
-      <span data-number="0" class="zero">0</span>
-      <span data-number="." class="dian">.</span>
-      <span id="equals" data-number="=" class="tool eq">＝</span>
+    <div class="main">
+      <div class="row">
+        <span id="reset" data-number="C">C</span>
+        <span id="remove" data-number="←">←</span>
+        <span data-number="%">%</span>
+        <span data-number="/" class="tool chu">÷</span>
+      </div>
+      <div class="row">
+        <span data-number="7">7</span>
+        <span data-number="8">8</span>
+        <span data-number="9">9</span>
+        <span data-number="*" class="tool cheng">×</span>
+      </div>
+      <div class="row">
+        <span data-number="4">4</span>
+        <span data-number="5">5</span>
+        <span data-number="6">6</span>
+        <span data-number="-" class="tool jian">ㅡ</span>
+      </div>
+      <div class="row">
+        <span data-number="1">1</span>
+        <span data-number="2">2</span>
+        <span data-number="3">3</span>
+        <span data-number="+" class="tool add">＋</span>
+      </div>
+      <div class="row">
+        <span data-number="0" class="zero">0</span>
+        <span data-number="." class="dian">.</span>
+        <span id="equals" data-number="=" class="tool eq">＝</span>
+      </div>
     </div>
   </div>
 </div>
-
-
-
 
 <script src="dist/bundle.js"></script>
 </body>
